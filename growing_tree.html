@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            overflow: hidden;
+            background: #000;
+            height:100%;
+            background-size: cover;
+            background-blend-mode: hard-light;
+            animation: hue-rotate 10s linear infinite;
+        }
+        /*可以对一张图片试试这个，效果挺不错的，对文字无效果，背景色有效果*/
+        @keyframes hue-rotate {
+            from {
+                filter: hue-rotate(0);
+            }
+            to {
+                filter: hue-rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<canvas id="mycanvas" width="100%" height="100%"></canvas>
+
+<script src="jquery-3.1.0.js"></script>
+<script src="growing_tree.js"></script>
+</body>
+</html>
